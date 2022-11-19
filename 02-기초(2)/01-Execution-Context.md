@@ -4,6 +4,8 @@
 
 Execution context is the internal javascript construct to track execution of a function or the global code. The js engine maintains a stack data structure - execution context stack or call stack, which contains these contexts and the global execution context stays at the bottom of this stack. And a new execution context is created and pushed to the stack when execution of a function begins. A particular execution context tracks the pointer where statement of the corresponding function is being executed. An execution context is popped from the stack when corresponding function's execution is finished.
 
+Types:
+
 - Global Execution Context
 - Functional Execution Context
 - Eval Function Execution Context
@@ -13,7 +15,7 @@ Creation Phase
 - Create the global object
 - Create the 'this' object and bind it to the global object
 - Setup memory heap for storing variables and function references
-- Store functions and variables in global execution context and set to "undefined"
+- Store functions and variables in global execution context and set to "undefined" (Hoisting)
 
 Execution Phase
 
